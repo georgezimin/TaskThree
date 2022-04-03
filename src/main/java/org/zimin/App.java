@@ -43,7 +43,7 @@ public class App {
             ex.printStackTrace();
         }
         IplImage src = cvLoadImage(path + "screen.png", 0);
-        IplImage tmp = cvLoadImage(path + "furfing\\template.png", 0);
+        IplImage tmp = cvLoadImage(path + "temps\\template.png", 0);
         IplImage result = cvCreateImage(cvSize(src.width() - tmp.width() + 1, src.height() - tmp.height() + 1),
                 IPL_DEPTH_32F,1);
         cvZero(result);
